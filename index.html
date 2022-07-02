@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labirint test</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Оформление заказа</h1>
+      <section class="order-info">
+        <article class="delivery-info">
+          <section class="delivery-details">
+            <header class="address-header">
+              <h2>Доставка</h2>
+              <div class="arrows">
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </header>
+            <article class="addresses">
+              <section class="address1">
+                <div class="">
+                  <p><strong>Лабиринт, курьер — 25 сен.,</strong> +200 ₽</p>
+                  <p>ул. Алексея Алексеева, 194 Б, Москва, 123456</p>
+                </div>
+              </section>
+              <section class="address2">
+                <div>
+                  <p><strong>Почта России, курьер — 24-26 сент.</strong></p>
+                  <p>
+                    ул. Академика Королева, 73/3, Петропавловск- Камчатский,
+                    683000
+                  </p>
+                </div>
+                <p class="price">+367 ₽</p>
+              </section>
+              <section class="address3">
+                <div class="">
+                  <p>
+                    <strong>Лабиринт, курьер — 25 сент.</strong>
+                  </p>
+                  <p>Можайское шоссе, д. 21, кв. 50, Москва, 121471</p>
+                </div>
+                <p class="price">0 ₽</p>
+              </section>
+            </article>
+            <a href="#">Выбрать новое место и способ</a>
+            <article class="dates">
+              <div class="">
+                <section class="date1">
+                  <p class="dates_desktop">
+                    <strong>пн, 24 сен — ср, 26 сен</strong>
+                  </p>
+                  <p class="dates_mobile"><strong>вт, 25 сен</strong></p>
+                  <p>10:00–19:00</p>
+                </section>
+                <section class="date2">
+                  <p class="dates_desktop">
+                    <strong>чт, 27 сен — пт, 28 сен</strong>
+                  </p>
+                  <p class="dates_mobile"><strong>ср, 26 сен</strong></p>
+                  <p>10:00–19:00</p>
+                </section>
+              </div>
+              <a href="#">Другие дата и время</a>
+            </article>
+          </section>
+          <form action="/">
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="mode1"
+              name="mode1"
+            />
+            <label for="mode1"> Viber/СМС уведомления о статусе заказа</label>
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="mode2"
+              name="mode2"
+            />
+            <label for="mode2">Оставить у двери (бесконтактная доставка)</label>
+          </form>
+          <article class="delivery-recipient">
+            <h2>Получатель</h2>
+            <section class="delivery-recipient__name">
+              <label for="recipient" class="name_desktop">Имя и фамилия</label>
+              <label for="recipient" class="name_mobile"
+                >Имя и фамилия, как в паспорте</label
+              >
+              <select id="recipient" name="recipient">
+                <option>Вольфганг Вениаминович Константинопольский</option>
+                <option>Константин Константинопольский</option>
+              </select>
+            </section>
+            <section class="delivery-recipient__phone">
+              <label for="recipient-phone" class="phone_desktop"
+                >Контактный телефон</label
+              >
+              <label for="recipient-phone" class="phone_mobile"
+                >Мобильный телефон</label
+              >
+              <select id="recipient-phone" name="recipient-phone">
+                <option>+7 910 234-56-78</option>
+                <option>+7 901 234-56-78</option>
+              </select>
+            </section>
+            <a href="#" class="new-name">Новый получатель</a>
+            <a href="#" class="new-phone">Новый телефон</a>
+          </article>
+          <div class="box"></div>
+        </article>
+        <aside class="order-summary">
+          <h2>В заказе 4 товара <span>(2 кг)</span></h2>
+          <p>Цена товаров <span>29 456 ₽</span></p>
+          <p>Все скидки <span>–7 732 ₽</span></p>
+          <p>Скидка за предоплату <span>–3%</span></p>
+          <div class="line"></div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <button class="pay-button">Оформить и оплатить</button>
+      <p>Итого к оплате на сайте:</p>
+      <span>21 072 ₽</span>
+      <div class="">К оплате: 21 072 ₽</div>
+      <a href="#id01" class="more"> Подробнее</a>
+    </footer>
+    <div id="id01" class="popup">
+      <a href="#" class="close"></a>
+      <div class="popup__content">
+        <div class="">
+          <h2>В заказе 5 товара <span>(2 кг)</span></h2>
+          <p>Цена товаров <span>29 456 ₽</span></p>
+          <p>Все скидки <span>–7 732 ₽</span></p>
+          <div class="line"></div>
+          <p>К оплате:<span>21 072 ₽</span></p>
+          <div class="line"></div>
+        </div>
+        <div class="">
+          <a href="#" class="closebtn">Закрыть подробности</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
