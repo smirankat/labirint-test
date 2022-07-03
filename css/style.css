@@ -245,7 +245,7 @@ aside p span,
   font-weight: 700;
 }
 .line {
-  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
   margin: 20px 0;
 }
 .box {
